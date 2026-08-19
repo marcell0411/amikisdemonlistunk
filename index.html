@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Demon List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>MY DEMON LIST</h1>
+      <p>My custom Geometry Dash Demon List</p>
+      <input id="search" type="search" placeholder="Search levels, creators, or players...">
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="stats">
+      <div><b id="levelCount">0</b><span>Levels</span></div>
+      <div><b id="playerCount">0</b><span>Players</span></div>
+      <div><b id="topName">—</b><span>#1 Level</span></div>
+    </section>
+
+    <div class="tabs">
+      <button class="active" data-tab="list">Demon List</button>
+      <button data-tab="players">Players</button>
+    </div>
+
+    <section id="listTab">
+      <div id="levelList"></div>
+    </section>
+
+    <section id="playersTab" class="hidden">
+      <div id="playerList"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
